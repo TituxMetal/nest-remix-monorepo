@@ -1,9 +1,12 @@
-import { NestFactory } from '@nestjs/core'
-import { NestExpressApplication } from '@nestjs/platform-express'
-import { getPublicDir, startDevServer } from '@virgile/frontend'
-import { AppModule } from '~/app.module'
+import process from 'node:process'
 
-async function bootstrap() {
+import { NestFactory } from '@nestjs/core'
+import { type NestExpressApplication } from '@nestjs/platform-express'
+import { getPublicDir, startDevServer } from '@virgile/frontend'
+
+import { AppModule } from './app.module'
+
+const bootstrap = async () => {
   const app = await NestFactory.create<NestExpressApplication>(AppModule, {
     bodyParser: false
   })
@@ -20,7 +23,8 @@ async function bootstrap() {
 
   const selectedPort = process.env.PORT ?? 3000
 
-  console.log(`Running on port http://localhost:${selectedPort}`)
+  console.log(`Running on port http://localhost:${selectedPort.toString()}`)
   await app.listen(selectedPort)
 }
+
 bootstrap()
