@@ -48,3 +48,6 @@ the above issues.
       for NestJS
 - [x] Adjust the tsconfig in the frontend to extends the base and add the necessary configurations
       for Remix
+- [x] Remove all unnecessary scripts from the package.json in backend
+- [x] Add the standard base scripts, build, dev, and start, that works for NestJS in the backend
+      package.json file
