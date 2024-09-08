@@ -60,8 +60,8 @@ the above issues.
 - [x] Update the tailwind config content key with:
       `content: [path.join(__dirname, './app/**/*.{ts,tsx}')]`
   - [x] Change tailwind.config.cjs to tailwind.config.ts if it works
-- [ ] Add Eslint to the project:
-  - [ ] First in the backend
+- Add Eslint to the project:
+  - [x] First in the backend
   - [ ] Then in the frontend
 - [ ] Add Prettier to the project
 - [ ] Move the backend and frontend to an apps folder
