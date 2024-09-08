@@ -43,3 +43,8 @@ the above issues.
 ## Steps
 
 - [x] Remove all Eslint related files and packages from the project
+- [x] Change the tsconfig in the package to a standard base configuration that works in all apps
+- [x] Adjust the tsconfig in the backend to extends the base and add the necessary configurations
+      for NestJS
+- [x] Adjust the tsconfig in the frontend to extends the base and add the necessary configurations
+      for Remix
