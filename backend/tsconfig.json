@@ -1,9 +1,9 @@
 {
+  "$schema": "https://json.schemastore.org/tsconfig",
   "extends": "@virgile/typescript-config/base.json",
   "compilerOptions": {
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "strict": true,
     "outDir": "./dist",
     "rootDir": "./src",
     "baseUrl": "./",
@@ -11,7 +11,7 @@
       "~/*": ["src/*"]
     },
     "noEmit": false,
-    "lib": ["DOM", "ES2023"]
+    "lib": ["DOM", "ES2022"]
   },
   "include": ["./src/**/*"]
 }
