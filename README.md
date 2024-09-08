@@ -42,9 +42,4 @@ the above issues.
 
 ## Steps
 
-1. [ ] Remove all Eslint related files and packages from the project
-2. [ ] Add Eslint to the project:
-   - [ ] First in the backend
-   - [ ] Then in the frontend
-3. [ ] Add Prettier to the project
-4. [ ] Move the backend and frontend to an apps folder
+- [x] Remove all Eslint related files and packages from the project
