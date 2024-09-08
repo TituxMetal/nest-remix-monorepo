@@ -1,0 +1,31 @@
+{
+  "extends": "@virgile/typescript-config/base.json",
+  "include": [
+    "./types/**.ts",
+    "./app/**/*",
+    "./playwright.config.ts",
+    "./eslintrc.cjs",
+    "./tailwind.config.cjs"
+  ],
+  "exclude": ["index.d.cts"],
+  "compilerOptions": {
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "lib": ["DOM", "DOM.Iterable", "ES2022"],
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "jsx": "react-jsx",
+    "noImplicitAny": false,
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "target": "ES2022",
+    "strict": true,
+    "allowJs": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./app/*"]
+    },
+    "noEmit": true
+  }
+}
