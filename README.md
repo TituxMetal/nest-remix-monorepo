@@ -55,3 +55,8 @@ the above issues.
 - [x] Add the standard base scripts, build, dev, and start, that works for Remix in the frontend
       package.json file
 - [x] Add the necessary scripts to the root package.json file to build, dev, and start the full app
+- [x] Add the tailwind config path to postcss.config.cjs, like this:
+      `config: path.resolve(__dirname, 'tailwind.config.ts')`
+- [x] Update the tailwind config content key with:
+      `content: [path.join(__dirname, './app/**/*.{ts,tsx}')]`
+  - [x] Change tailwind.config.cjs to tailwind.config.ts if it works
