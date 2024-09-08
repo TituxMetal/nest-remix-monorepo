@@ -1,5 +1,5 @@
 import { Module } from '@nestjs/common'
-import { RemixController, RemixService } from './remix'
+import { RemixController, RemixService } from '~/remix'
 
 @Module({
   imports: [],

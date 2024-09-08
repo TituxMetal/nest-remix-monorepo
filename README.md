@@ -28,11 +28,11 @@ styling.
 This porject works great as is, but there are some issues that need to be resolved:
 
 - [ ] Eslint is not working properly
-- [ ] The tsconfig is not clear
-- [ ] When using the standard Turbo setup, the Remix frontend does not work properly:
-  - [ ] The Remix frontend is compiled correctly, but the Tailwind CSS is not applied:
-    - [ ] The Tailwind configuration is correct?
-  - [ ] The Remix frontend is not served correctly by the NestJS backend
+- ~~[ ] The tsconfig is not clear~~
+- [ ] When using the standard Turbo setup, ~~the Remix frontend does not work properly:~~
+  - ~~[ ] The Remix frontend is compiled correctly, but the Tailwind CSS is not applied:~~
+    - ~~[ ] The Tailwind configuration is correct?~~
+  - ~~[ ] The Remix frontend is not served correctly by the NestJS backend~~
 - [ ] The Turbo file structure is not standard
 
 ## Goals
@@ -60,3 +60,8 @@ the above issues.
 - [x] Update the tailwind config content key with:
       `content: [path.join(__dirname, './app/**/*.{ts,tsx}')]`
   - [x] Change tailwind.config.cjs to tailwind.config.ts if it works
+- [ ] Add Eslint to the project:
+  - [ ] First in the backend
+  - [ ] Then in the frontend
+- [ ] Add Prettier to the project
+- [ ] Move the backend and frontend to an apps folder
