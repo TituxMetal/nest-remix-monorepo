@@ -1,29 +1,29 @@
 {
   "name": "nestjs-remix-monorepo",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "build": "turbo build",
-    "dev": "turbo dev",
-    "start": "cd backend && yarn start",
-    "lint": "turbo lint",
-    "typecheck": "turbo typecheck",
-    "clean-node-modules": "rm -rf {node_modules,*.lock} **/**/{node_modules,*.lock}",
-    "clean-turbo-cache": "rm -rf .turbo **/**/.turbo"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "private": true,
-  "packageManager": "yarn@1.22.22",
+  "description": "",
+  "keywords": [],
+  "license": "ISC",
+  "author": "",
+  "main": "index.js",
   "workspaces": [
     "frontend",
     "backend",
     "packages/*"
   ],
+  "scripts": {
+    "build": "turbo build",
+    "clean-node-modules": "rm -rf {node_modules,*.lock} **/**/{node_modules,*.lock}",
+    "clean-turbo-cache": "rm -rf .turbo **/**/.turbo",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "start": "turbo start",
+    "typecheck": "turbo typecheck"
+  },
   "devDependencies": {
-    "@virgile/frontend": "0",
-    "turbo": "^2.0.14"
-  }
+    "@virgile/frontend": "*",
+    "turbo": "^2.1.1"
+  },
+  "packageManager": "yarn@1.22.22"
 }
