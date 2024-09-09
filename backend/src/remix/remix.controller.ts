@@ -1,7 +1,7 @@
 import { All, Controller, Next, Req, Res } from '@nestjs/common'
 import { createRequestHandler } from '@remix-run/express'
 import { getServerBuild } from '@virgile/frontend'
-import type { NextFunction, Request, Response } from 'express'
+import { type NextFunction, type Request, type Response } from 'express'
 
 import { RemixService } from './remix.service'
 
