@@ -4,11 +4,11 @@ let devServer
 const SERVER_DIR = path.join(__dirname, 'build/server/index.js')
 const PUBLIC_DIR = path.join(__dirname, 'build/client')
 
-module.exports.getPublicDir = function getPublicDir() {
+module.exports.getPublicDir = () => {
   return PUBLIC_DIR
 }
 
-module.exports.getServerBuild = async function getServerBuild() {
+module.exports.getServerBuild = async () => {
   if (process.env.NODE_ENV === 'production' || devServer === null) {
     return import(SERVER_DIR)
   }
@@ -16,7 +16,7 @@ module.exports.getServerBuild = async function getServerBuild() {
   return ssrModule
 }
 
-module.exports.startDevServer = async function startDevServer(app) {
+module.exports.startDevServer = async app => {
   if (process.env.NODE_ENV === 'production') return
   const vite = await import('vite')
   devServer = await vite.createServer({

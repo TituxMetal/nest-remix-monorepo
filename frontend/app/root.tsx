@@ -1,5 +1,6 @@
-import type { LinksFunction } from '@remix-run/node'
+import { type LinksFunction } from '@remix-run/node'
 import { Links, Meta, Outlet, Scripts, ScrollRestoration } from '@remix-run/react'
+
 import faviconAssetUrl from '~/assets/favicon.svg?url'
 import tailwindStylesheetLink from '~/styles/tailwind.css?url'
 
@@ -10,7 +11,7 @@ export const links: LinksFunction = () => {
   ]
 }
 
-export function Layout({ children }: { children: React.ReactNode }) {
+export const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html lang='en'>
       <head>
@@ -28,6 +29,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
   )
 }
 
-export default function App() {
+const App = () => {
   return <Outlet />
 }
+
+export default App
