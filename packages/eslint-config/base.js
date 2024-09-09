@@ -10,8 +10,8 @@ module.exports = {
     node: true
   },
   rules: {
-    'quotes': ['error', 'single'],
-    'semi': ['error', 'never'],
+    quotes: ['error', 'single'],
+    semi: ['error', 'never'],
 
     'import/consistent-type-specifier-style': ['warn', 'prefer-inline'],
     'import/no-duplicates': ['warn', { 'prefer-inline': true }],
@@ -38,13 +38,13 @@ module.exports = {
     'import/order': [
       'error',
       {
-        'alphabetize': {
+        alphabetize: {
           order: 'asc',
           caseInsensitive: true
         },
-        'groups': [['builtin'], ['external'], 'internal', 'parent', 'sibling'],
+        groups: [['builtin'], ['external'], 'internal', 'parent', 'sibling'],
         'newlines-between': 'always',
-        'pathGroups': [
+        pathGroups: [
           {
             pattern: '~/**',
             group: 'parent'

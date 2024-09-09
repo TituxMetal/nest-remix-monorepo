@@ -14,13 +14,13 @@ const ApiPage = () => {
   const { message } = useLoaderData<typeof loader>()
 
   return (
-    <div className='font-sans p-4 bg-blue-900'>
+    <div className='bg-blue-900 p-4 font-sans'>
       <h1 className='text-3xl text-green-500'>Message from backend: {message}</h1>
       <p className='text-2xl'>
         Edit this file in <code>app/routes/api.tsx</code>
       </p>
-      <button type='button' className='my-2 text-xl border border-sky-200 p-4 rounded-md'>
-        <Link to='/'>Go to Home</Link>
+      <button type='button' className='my-2 rounded-md border border-sky-200 p-4 text-xl'>
+        <Link to='/'>Home</Link>
       </button>
     </div>
   )
