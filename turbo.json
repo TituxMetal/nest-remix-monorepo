@@ -1,14 +1,13 @@
 {
   "$schema": "https://turbo.build/schema.json",
+  "globalEnv": ["NODE_ENV", "PORT"],
   "tasks": {
     "build": {
-      "outputs": [
-        "backend/dist/**",
-        "frontend/build/**"
-      ],
-      "dependsOn": [
-        "^build"
-      ]
+      "outputs": ["backend/dist/**", "frontend/build/**"],
+      "dependsOn": ["^build"]
+    },
+    "start": {
+      "dependsOn": ["^start", "build"]
     },
     "dev": {
       "cache": false,
@@ -18,7 +17,7 @@
       "cache": false
     },
     "lint": {
-      "cache": false
+      "cache": true
     }
   }
 }
