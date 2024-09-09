@@ -6,22 +6,14 @@
   "files": [
     "base.js"
   ],
-  "devDependencies": {
-    "@remix-run/eslint-config": "^2.4.1",
-    "@typescript-eslint/eslint-plugin": "^6.7.4",
-    "@typescript-eslint/parser": "^6.7.4",
-    "eslint": "^8.56.0",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-import-resolver-typescript": "^3.6.1",
-    "eslint-plugin-import": "^2.28.1",
-    "eslint-plugin-jsx-a11y": "^6.7.1",
-    "eslint-plugin-prefer-arrow-functions": "^3.4.1",
-    "eslint-plugin-react": "^7.33.2",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-tailwindcss": "^3.17.4"
-  },
-  "prettier": {},
   "scripts": {
-    "lint:parent": "cd ../../ && npm run lint"
+    "lint:parent": "cd ../../ && yarn run lint"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.4.0",
+    "@typescript-eslint/parser": "^8.4.0",
+    "@vercel/style-guide": "^6.0.0",
+    "eslint": "^8.56.0",
+    "eslint-config-turbo": "^2.1.1"
   }
 }
