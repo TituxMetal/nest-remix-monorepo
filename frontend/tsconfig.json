@@ -6,9 +6,11 @@
     "./app/**/*",
     "./playwright.config.ts",
     "./eslintrc.cjs",
+    "./index.d.cts",
+    "./index.cjs",
+    "./vite.config.ts",
     "./tailwind.config.ts"
   ],
-  "exclude": ["index.d.cts"],
   "compilerOptions": {
     "module": "ESNext",
     "skipLibCheck": true,
