@@ -62,6 +62,6 @@ the above issues.
   - [x] Change tailwind.config.cjs to tailwind.config.ts if it works
 - Add Eslint to the project:
   - [x] First in the backend
-  - [ ] Then in the frontend
+  - [x] Then in the frontend
 - [ ] Add Prettier to the project
 - [ ] Move the backend and frontend to an apps folder
