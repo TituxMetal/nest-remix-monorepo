@@ -63,5 +63,6 @@ the above issues.
 - Add Eslint to the project:
   - [x] First in the backend
   - [x] Then in the frontend
+- [x] Make a base Eslint config in a package that can be extended by the backend and frontend
 - [ ] Add Prettier to the project
 - [ ] Move the backend and frontend to an apps folder
