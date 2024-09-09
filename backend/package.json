@@ -7,9 +7,9 @@
   "author": "",
   "scripts": {
     "prebuild": "rimraf dist tsconfig.tsbuildinfo",
-    "build": "tsc --build",
+    "build": "nest build",
     "dev": "nest start --watch",
-    "lint": "eslint \"{src,apps,libs,test}/**/*.ts\"",
+    "lint": "eslint --cache --cache-location ./node_modules/.cache/eslint .",
     "start": "node dist/main",
     "typecheck": "tsc --noEmit"
   },
